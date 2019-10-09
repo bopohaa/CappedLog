@@ -1,4 +1,4 @@
-﻿# Features
+# Features
 
 * Capping logger (see info in [CappedLog.core](https://github.com/bopohaa/CappedLog/blob/master/CappedLog.core/README.md) )
 * Supporting logging API
