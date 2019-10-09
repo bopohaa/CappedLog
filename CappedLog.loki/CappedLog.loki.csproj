@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>CappedLog.loki</AssemblyName>
+    <RootNamespace>CappedLog</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CappedLog.core" Version="2.2.4" />
+    <PackageReference Include="protobuf-net" Version="2.4.0" />
+    <PackageReference Include="SnappyLib" Version="1.1.7" />
+  </ItemGroup>
+
+</Project>

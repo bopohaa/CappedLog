@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>CappedLog.hosting.extensions</id>
+    <version>2.2.4</version>
+    <authors>Nikolay Vorobev</authors>
+    <owners>Nikolay Vorobev</owners>
+    <description>Extension for logging (CappedLog) and scraping (Grafana.Loki) data</description>
+    <copyright>2019</copyright>
+    <tags>log scrape c# inmemory label tag logging extension loki grafana</tags>
+    <projectUrl>https://github.com/bopohaa/CappedLog</projectUrl>
+    <repository type="git" url="https://github.com/bopohaa/CappedLog/CappedLog.hosting.extensions" />
+    <license type="expression">MIT</license>
+    <iconUrl>https://raw.githubusercontent.com/bopohaa/CappedLog/master/icon.png</iconUrl>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="CappedLog.loki" version="2.2.4" />
+        <dependency id="CappedLog.provider" version="2.2.4" />
+        <dependency id="Microsoft.Extensions.Hosting.Abstractions" version="3.0.0" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\netstandard2.0\CappedLog.hosting.extensions.dll" target="lib\netstandard2.0\CappedLog.hosting.extensions.dll" />
+  </files>
+</package>

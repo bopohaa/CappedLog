@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>CappedLog.core</id>
+    <version>2.2.4</version>
+    <authors>Nikolay Vorobev</authors>
+    <owners>Nikolay Vorobev</owners>
+    <projectUrl>https://github.com/bopohaa/CappedLog</projectUrl>
+    <description>Fixed size tagged log located in memory</description>
+    <copyright>2019</copyright>
+    <tags>log c# inmemory label tag</tags>
+    <repository type="git" url="https://github.com/bopohaa/CappedLog/CappedLog.core" />
+    <license type="expression">MIT</license>
+    <iconUrl>https://raw.githubusercontent.com/bopohaa/CappedLog/master/icon.png</iconUrl>
+  </metadata>
+  <files>
+    <file src="bin\Release\netstandard2.0\CappedLog.core.dll" target="lib\netstandard2.0\CappedLog.core.dll" />
+  </files>
+</package>
