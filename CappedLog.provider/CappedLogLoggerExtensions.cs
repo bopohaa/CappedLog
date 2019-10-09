@@ -1,14 +1,14 @@
 ﻿using System;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Logging.Configuration;
+using CappedLog;
 
-namespace CappedLog
+namespace Microsoft.Extensions.DependencyInjection
 {
     public static class CappedLogLoggerExtensions
     {
-        public static Lazy<CappedLog> DefaultCappedLog = new Lazy<CappedLog>(true);
+        public static Lazy<CappedLog.CappedLog> DefaultCappedLog = new Lazy<CappedLog.CappedLog>(true);
 
         public static ILoggingBuilder AddCappedLog(this ILoggingBuilder builder, Action<CappedLogLoggerOptions> configure = null)
         {
