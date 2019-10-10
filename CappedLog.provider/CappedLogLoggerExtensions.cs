@@ -24,7 +24,7 @@ namespace Microsoft.Extensions.DependencyInjection
         private static void ConfigureCappedLog(CappedLogLoggerOptions opt, Action<CappedLogLoggerOptions> configure)
         {
             var conf = new CappedLogConfBuilder()
-                .AddConstLabel("app", opt.ApplicationName ?? System.Reflection.Assembly.GetExecutingAssembly().GetName().Name)
+                .AddConstLabel("app", opt.ApplicationName ?? System.Reflection.Assembly.GetEntryAssembly().GetName().Name)
                 .SetDefaultCapacity(opt.DefaultCapacity == 0 ? 10 : opt.DefaultCapacity);
             opt.DefaultBuilder = conf;
             configure?.Invoke(opt);
