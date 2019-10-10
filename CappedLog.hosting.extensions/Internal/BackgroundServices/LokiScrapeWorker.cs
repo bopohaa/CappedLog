@@ -56,7 +56,7 @@ namespace CappedLog
 
         private void Scrape_OnSuccess(int size)
         {
-            _logger.LogInformation(new EventId(1, "ScrapeSuccess"), string.Empty);
+            _logger.LogInformation(new EventId(1, "ScrapeSuccess"), "Scrape success with size: {}", size);
         }
 
         private void Scrape_OnError(Exception ex)

@@ -6,8 +6,6 @@ namespace Microsoft.Extensions.DependencyInjection
 {
     public static class CapedLogHostingDiExtensions
     {
-        private static CappedLog.CappedLog _capedLog = new CappedLog.CappedLog();
-
         public static IServiceCollection AddCappedLogLokiScrape(this IServiceCollection services)
         {
             return services.AddHostedService<LokiScrapeWorker>();
